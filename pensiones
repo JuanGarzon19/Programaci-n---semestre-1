@@ -1,0 +1,25 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int sexo, NumHijos;
+    int NumSemanas=1300;
+    cout<<"Ingrese su sexo (Femenino = 0, Masculino = 1)";
+    cin>>sexo;
+    if (sexo=1) {
+        cout<<"Usted necesita el siguiente numero de semanas para pensionarse: "<<NumSemanas<<endl;
+    } 
+    else {
+        cout<<"¿Usted tiene hijos? (Si = 1, No = 0)";
+        cin>>NumHijos;
+        if (NumHijos=1) {
+            cout<<"¿Cuantos hijos tiene?";
+            cin>>NumHijos;
+        }
+        
+    }
+    
+    return 0;
+}
