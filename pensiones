@@ -1,25 +1,35 @@
 #include<iostream>
+#include<math.h>
 
 using namespace std;
 
 int main()
 {
-    int sexo, NumHijos;
+    int sexo;
     int NumSemanas=1300;
     cout<<"Ingrese su sexo (Femenino = 0, Masculino = 1)";
     cin>>sexo;
-    if (sexo=1) {
+    if (sexo==1) {
         cout<<"Usted necesita el siguiente numero de semanas para pensionarse: "<<NumSemanas<<endl;
     } 
     else {
+        int NumHijos;
         cout<<"¿Usted tiene hijos? (Si = 1, No = 0)";
         cin>>NumHijos;
-        if (NumHijos=1) {
+        
+        if (NumHijos==0) {
+            cout<<"Usted necesita de 1000 semanas para pensionarse";
+        } 
+        else (NumHijos==1); {
             cout<<"¿Cuantos hijos tiene?";
             cin>>NumHijos;
+            NumHijos = min(3, NumHijos);
+            int NumSemHijos = NumSemanas-300-(NumHijos*50);
+            cout<<"Usted necesita "<<NumSemHijos<<" semanas para pensionarse"<<endl;
         }
         
     }
     
     return 0;
 }
+
