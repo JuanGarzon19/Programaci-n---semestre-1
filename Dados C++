@@ -1,0 +1,45 @@
+#include<iostream>
+
+
+using namespace std;
+
+int main()
+{
+    //int semilla=200;
+    srand(time(0));
+    int dado1=rand()%6+1;
+    int dado2=rand()%6+1;
+    cout<<dado1<<endl;
+    cout<<dado2<<endl;
+    int tiroinicial=dado1+dado2;
+    
+    if (tiroinicial==2 || tiroinicial==3 || tiroinicial==12) {
+        cout<<"Usted ha perdido";
+    }
+    else if (tiroinicial==7 || tiroinicial==11) {
+        cout<<"Usted ha ganado";
+    }
+    else  {
+        cout<<"Usted sigue jugando "<<endl;
+        
+        int semilla=200;
+        int dado1=rand()%6+1;
+        int dado2=rand()%6+1;
+        cout<<dado1<<endl;
+        cout<<dado2<<endl;
+        int tiro2=dado1+dado2;
+        
+        if (tiro2==tiroinicial) {
+            cout<<"usted ha ganado";
+        }
+        else if (tiro2==7) {
+            cout<<"Usted ha perdido";
+        }
+        else {
+            cout<<"Usted sigue jugando";
+        }
+    }
+        
+    
+    return 0;
+}
