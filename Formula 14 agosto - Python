@@ -1,0 +1,8 @@
+import math
+x=float(input("Ingrese el valor de x: "))
+y=float(input("Ingrese el valor de y: "))
+
+a=(math.sqrt((x + y**2)/3+x))
+b=(x**2/(y**3+x)) - (5*(math.sqrt(3*x)));
+z=a-b
+print("El resultado de la formula es de: ", z)
