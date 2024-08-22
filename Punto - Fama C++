@@ -1,0 +1,162 @@
+#include<iostream>
+
+using namespace std;
+
+int main() {
+cout<<"BIENVENIDO AL JUEGO PUNTO-FAMA"<<endl;
+int numero;
+int numero_d1;
+float numero_d2;
+int intento1;
+int intento1_d1;
+float intento1_d2;
+int intento2;
+int intento2_d1;
+float intento2_d2;
+int intento3;
+int intento3_d1;
+float intento3_d2;
+int intento4;
+int intento4_d1;
+float intento4_d2;
+int intento5;
+int intento5_d1;
+float intento5_d2;
+
+cout<<"Jugador A: Ingrese el numero secreto de 2 digitos: ";
+cin>>numero;
+
+if (numero>9 && numero <100) {
+    cout<<"Su numero secreto es "<<numero<<" para el jugador B"<<endl;
+    numero_d1=numero/10; //para sacar las decenas
+    numero_d2=numero%10; //para sacar las unidades
+    cout<<"primer digito "<<numero_d1<<endl; //para comprobar
+    cout<<"segundo digito "<<numero_d2<<endl; //para comprobar
+    cout<<"Jugaddor B: Ingrese su primer intento";
+    cin>>intento1;
+    intento1_d1=intento1/10; 
+    intento1_d2=intento1%10; 
+    cout<<"primer digito "<<intento1_d1<<endl;
+    cout<<"segundo digito "<<intento1_d2<<endl;
+ 
+    if (intento1 < 10 || intento1 > 100) {
+          cout<<"Numero invalido "<<endl;
+    } 
+    else if (intento1_d1 == numero_d2 && intento1_d2 == numero_d1) {
+        cout<<"Usted tiene dos puntos"<<endl;
+    }  
+    else if (intento1_d1 == numero_d2 || intento1_d2 == numero_d1) {
+      cout<<"Usted tiene un punto"<<endl;
+    } 
+    else if (intento1_d1 == numero_d1 && intento1_d2 == numero_d2) {
+        cout<<"Usted ha ganado! "<<endl;
+    } 
+    else if (intento1_d1 == numero_d1 || intento1_d2 == numero_d2) {
+        cout<<"Usted tiene una fama "<<endl;
+    }
+    else {
+        cout<<"Usted no tiene nada "<<endl;
+    }
+    
+cout<<"Jugaddor B: Ingrese su segundo intento"<<endl;
+cin>>intento2;
+intento2_d1=intento2/10;
+intento2_d2=intento2%10;
+cout<<"primer digito "<<intento2_d1<<endl; 
+cout<<"segundo digito "<<intento2_d2<<endl;
+
+    if (intento2 < 10 || intento2 > 100) {
+          cout<<"Numero invalido "<<endl;
+    } 
+    else if (intento2_d1 == numero_d2 && intento2_d2 == numero_d1) {
+        cout<<"Usted tiene dos puntos"<<endl;
+    }  
+    else if (intento2_d1 == numero_d2 || intento2_d2 == numero_d1) {
+      cout<<"Usted tiene un punto"<<endl;  
+    } 
+    else if (intento2_d1 == numero_d1 && intento2_d2 == numero_d2) {
+        cout<<"Usted ha ganado! "<<endl;
+    } 
+    else if (intento2_d1 == numero_d1 || intento2_d2 == numero_d2) {
+        cout<<"Usted tiene una fama "<<endl;
+    }
+    else {
+        cout<<"Usted no tiene nada "<<endl;
+    }
+    
+cout<<"Jugaddor B: Ingrese su tercer intento"<<endl;
+cin>>intento3;
+intento3_d1=intento3/10;
+intento3_d2=intento3%10;
+cout<<"primer digito "<<intento3_d1<<endl; 
+cout<<"segundo digito "<<intento3_d2<<endl;   
+
+    if (intento3 < 10 || intento3 > 100) {
+          cout<<"Numero invalido "<<endl;
+    } 
+    else if (intento3_d1 == numero_d2 && intento3_d2 == numero_d1) {
+        cout<<"Usted tiene dos puntos"<<endl;
+    }  
+    else if (intento3_d1 == numero_d2 || intento3_d2 == numero_d1) {
+      cout<<"Usted tiene un punto"<<endl;  
+    } 
+    else if (intento3_d1 == numero_d1 && intento3_d2 == numero_d2) {
+        cout<<"Usted ha ganado! "<<endl;
+    } 
+    else if (intento3_d1 == numero_d1 || intento3_d2 == numero_d2) {
+        cout<<"Usted tiene una fama "<<endl;
+    }
+    else {
+        cout<<"Usted no tiene nada "<<endl;
+    }
+
+cout<<"Jugaddor B: Ingrese su cuarto intento"<<endl;
+cin>>intento4;
+intento4_d1=intento4/10;
+intento4_d2=intento4%10;
+cout<<"primer digito "<<intento4_d1<<endl; 
+cout<<"segundo digito "<<intento4_d2<<endl; 
+    
+    if (intento4 < 10 || intento4 > 100) {
+          cout<<"Numero invalido "<<endl;
+    } 
+    else if (intento4_d1 == numero_d2 && intento4_d2 == numero_d1) {
+        cout<<"Usted tiene dos puntos"<<endl;
+    }  
+    else if (intento4_d1 == numero_d2 || intento4_d2 == numero_d1) {
+      cout<<"Usted tiene un punto"<<endl;  
+    } 
+    else if (intento4_d1 == numero_d1 && intento4_d2 == numero_d2) {
+        cout<<"Usted ha ganado! "<<endl;
+    } 
+    else if (intento4_d1 == numero_d1 || intento4_d2 == numero_d2) {
+        cout<<"Usted tiene una fama "<<endl;
+    }
+    else {
+        cout<<"Usted no tiene nada "<<endl;
+    }
+
+cout<<"Jugaddor B: Ingrese su cuarto intento"<<endl;
+cin>>intento5;
+intento5_d1=intento5/10;
+intento5_d2=intento5%10;
+cout<<"primer digito "<<intento5_d1<<endl; 
+cout<<"segundo digito "<<intento5_d2<<endl; 
+    
+    if (intento5 < 10 || intento5 > 100) {
+          cout<<"Numero invalido, usted ha perdido "<<endl;
+    } 
+    else if (intento5_d1 == numero_d1 && intento5_d2 == numero_d2) {
+        cout<<"Usted ha ganado! "<<endl;
+    } 
+    else {
+        cout<<"Usted ha perido "<<endl;
+    }  
+}
+
+else {
+    cout<<"error numero invalido";
+}
+    
+    return 0;
+}
