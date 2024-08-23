@@ -1,2 +1,0 @@
-print("BIENVENIDO AL JUEGO PUNTO-FAMA")
-numero=int(input("Jugador A: Ingrese el numero secreto de 2 digitos: "))

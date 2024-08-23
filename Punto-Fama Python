@@ -1,0 +1,98 @@
+print("BIENVENIDO AL JUEGO PUNTO-FAMA")
+numero=int(input("Jugador A: Ingrese el numero secreto de 2 digitos: "))
+if numero > 9 and numero < 100:
+    numero_d1=numero//10
+    numero_d2=numero%10
+    print("Primer digito: ", numero_d1)
+    print("Segundo digito: ", numero_d2)
+    intento1=int(input("Jugador B: Ingrese su primer intento:"))
+    intento1_d1=intento1//10
+    intento1_d2=intento1%10
+    print("Primer digito: ", intento1_d1)
+    print("Segundo digito: ", intento1_d2)
+    
+    if intento1 < 10 or intento1 > 100:
+        print("Numero Invalido")
+    elif intento1_d1 == numero_d2 and  intento1_d2 == numero_d1:
+        print("Usted tiene dos puntos")
+    elif intento1_d1 == numero_d2 or intento1_d2 == numero_d1:
+        print("Usted tiene un punto")
+    elif intento1_d1 == numero_d1 and intento1_d2 == numero_d2:
+        print("Usted ha ganado!")
+    elif intento1_d1 == numero_d1 or intento1_d2 == numero_d2:
+        print("Usted tiene una fama")
+    else:
+        print("Usted no tiene nada")
+        
+    intento2=int(input("Jugador B: Ingrese su segundo intento:"))
+    intento2_d1=intento2//10
+    intento2_d2=intento2%10
+    print("Primer digito: ", intento2_d1)
+    print("Segundo digito: ", intento2_d2)
+        
+    if intento2 < 10 or intento2 > 100:
+        print("Numero Invalido")
+    elif intento2_d1 == numero_d2 and  intento2_d2 == numero_d1:
+        print("Usted tiene dos puntos")
+    elif intento2_d1 == numero_d2 or intento2_d2 == numero_d1:
+        print("Usted tiene un punto")
+    elif intento2_d1 == numero_d1 and intento2_d2 == numero_d2:
+        print("Usted ha ganado!")
+    elif intento2_d1 == numero_d1 or intento2_d2 == numero_d2:
+        print("Usted tiene una fama")
+    else:
+        print("Usted no tiene nada")
+        
+    intento3=int(input("Jugador B: Ingrese su tercer intento:"))
+    intento3_d1=intento3//10
+    intento3_d2=intento3%10
+    print("Primer digito: ", intento3_d1)
+    print("Segundo digito: ", intento3_d2)
+        
+    if intento3 < 10 or intento3 > 100:
+        print("Numero Invalido")
+    elif intento3_d1 == numero_d2 and  intento3_d2 == numero_d1:
+        print("Usted tiene dos puntos")
+    elif intento3_d1 == numero_d2 or intento3_d2 == numero_d1:
+        print("Usted tiene un punto")
+    elif intento3_d1 == numero_d1 and intento3_d2 == numero_d2:
+        print("Usted ha ganado!")
+    elif intento3_d1 == numero_d1 or intento3_d2 == numero_d2:
+        print("Usted tiene una fama")
+    else:
+        print("Usted no tiene nada")
+        
+    intento4=int(input("Jugador B: Ingrese su cuarto intento:"))
+    intento4_d1=intento4//10
+    intento4_d2=intento4%10
+    print("Primer digito: ", intento4_d1)
+    print("Segundo digito: ", intento4_d2)
+        
+    if intento4 < 10 or intento4 > 100:
+        print("Numero Invalido")
+    elif intento4_d1 == numero_d2 and  intento4_d2 == numero_d1:
+        print("Usted tiene dos puntos")
+    elif intento4_d1 == numero_d2 or intento4_d2 == numero_d1:
+        print("Usted tiene un punto")
+    elif intento4_d1 == numero_d1 and intento4_d2 == numero_d2:
+        print("Usted ha ganado!")
+    elif intento4_d1 == numero_d1 or intento4_d2 == numero_d2:
+        print("Usted tiene una fama")
+    else:
+        print("Usted no tiene nada")
+
+    intento5=int(input("Jugador B: Ingrese su cuarto intento:"))
+    intento5_d1=intento5//10
+    intento5_d2=intento5%10
+    print("Primer digito: ", intento5_d1)
+    print("Segundo digito: ", intento5_d2)
+    
+    if intento5 < 10 or intento5 > 100: 
+        print("Numero invalido, usted ha perdido ")
+    elif intento5_d1 == numero_d1 and intento5_d2 == numero_d2:
+        print("Usted ha ganado! ")
+    else:
+        print("Usted ha perido ")
+
+else:
+    print("Error numero invalido")
