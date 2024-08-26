@@ -1,0 +1,58 @@
+import random
+dado1=random.randint(1, 6)
+dado2=random.randint(1, 6)
+print(f"El primer dado es {dado1} y el segundo dado es {dado2}")
+tiro1=dado1+dado2
+
+if tiro1==2 or tiro1==3  or tiro1==12:
+    print("-----Usted ha perdido-----")
+elif tiro1==7 or tiro1==11:
+    print("-----Usted ha ganado-----")
+else:
+    print("-----Usted sigue jugando-----")
+    
+    dado1=random.randint(1, 6)
+    dado2=random.randint(1, 6)
+    print(f"El primer dado es {dado1} y el segundo dado es {dado2}")
+    tiro2=dado1+dado2
+    
+    if tiro2==tiro1:
+        print("-----Usted ha ganado-----")
+    elif tiro2==7:
+        print("-----Usted ha perdido-----")
+    else:
+        print("-----Usted sigue jugando-----")
+        
+        dado1=random.randint(1, 6)
+        dado2=random.randint(1, 6)
+        print(f"El primer dado es {dado1} y el segundo dado es {dado2}")
+        tiro3=dado1+dado2
+    
+        if tiro3==tiro1:
+            print("-----Usted ha ganado-----")
+        elif tiro3==7:
+            print("-----Usted ha perdido-----")
+        else:
+            print("-----Usted sigue jugando-----")
+            
+            dado1=random.randint(1, 6)
+            dado2=random.randint(1, 6)
+            print(f"El primer dado es {dado1} y el segundo dado es {dado2}")
+            tiro4=dado1+dado2
+    
+            if tiro4==tiro1:
+                print("-----Usted ha ganado-----")
+            elif tiro4==7:
+                print("-----Usted ha perdido-----")
+            else:
+                print("-----Usted sigue jugando-----")
+                
+                dado1=random.randint(1, 6)
+                dado2=random.randint(1, 6)
+                print(f"El primer dado es {dado1} y el segundo dado es {dado2}")
+                tiro5=dado1+dado2
+    
+                if tiro5==tiro1:
+                    print("-----Usted ha ganado-----")
+                else:
+                    print("-----Usted ha perdido-----")
