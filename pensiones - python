@@ -1,0 +1,8 @@
+sexo=int(input("Ingrese su sexo (Femenino = 0, Masculino = 1)"))
+if sexo == 1:
+    print("Usted necesita de 1300 semanas para pensionarse: ")
+else:
+    NumHijos=int(input("Ingrese el numero de hijos"))
+    NumHijos=min(3, NumHijos)
+    semanas=1000-(50*NumHijos)
+    print("Usted necesita de la siguiente cantidad de semanas para pensionarse: ", semanas)
