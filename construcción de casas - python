@@ -1,0 +1,66 @@
+print("Bienveniddo a TuttiCuadrati, pioneros en la construcción de casas a la medida ")
+NumHabitaciones=int(input("Ingrese la cantidad de habitaciones (entre 1 y 3)"))
+if NumHabitaciones < 1:
+    NumHabitaciones = 1
+elif NumHabitaciones > 3:
+    NumHabitaciones = 3
+
+print (f"El numero de habitaciones que usted ha ingreasado es de: {NumHabitaciones}")
+AreaHabitacion1=float(input("Por favor ingrese el area de la primera habitacion en metros cuadrados: "))
+
+if AreaHabitacion1 < 2:
+    AreaHabitacion1 = 2
+elif AreaHabitacion1 > 10:
+    AreaHabitacion1 = 10
+    
+if NumHabitaciones >= 2:
+    AreaHabitacion2=float(input("Por favor ingrese el area de la segunda habitacion en metros cuadrados: "))
+    if AreaHabitacion2 < 2:
+        AreaHabitacion2 = 2
+    elif AreaHabitacion2 > 10:
+        AreaHabitacion2 = 10
+elif NumHabitaciones == 1:
+    AreaHabitacion2=0   
+    
+if NumHabitaciones == 3:
+    AreaHabitacion3=float(input("Por favor ingrese el area de la tercera habitacion en metros cuadrados: "))
+    if AreaHabitacion3 < 2:
+        AreaHabitacion3 = 2
+    elif AreaHabitacion3 > 10:
+        AreaHabitacion3 = 10    
+elif NumHabitaciones < 3:
+    AreaHabitacion3=0    
+    
+NumBanosP=int(input("Por favor ingrese la cantidad de baños premium: "))
+if NumBanosP < 1:
+    NumBanosP=1
+    AreaBanosP=NumBanosP*9
+else:
+    AreaBanosP=NumBanosP*9
+    
+NumBanosS=int(input("Por favor ingrese la cantidad de baños sencillos: "))
+AreaBanosS=NumBanosS*4
+AreaBanos=AreaBanosS+AreaBanosP
+
+AreaSocial=int(input("Quiere un area social regular o premium? (Regular=0 - Premium=1)"))
+if AreaSocial == 0:
+    AreaSocial=20
+elif AreaSocial == 1:
+    AreaSocial=40
+    
+AreaPatio=int(input("Quiere un patio en su casa? (No=0 - Si=1)"))
+if AreaPatio == 1:
+    largo=float(input("Por favor ingrese el largo de su patio: "))
+    if largo < 2:
+        largo = 2
+    elif largo > 8:
+        largo = 8  
+    ancho=float(input("Por favor ingrese el ancho de su patio: "))
+    if ancho < 2:
+        ancho = 2
+    elif ancho > 8:
+        ancho = 8  
+AreaPatio=largo*ancho        
+    
+AreaTotal=(AreaHabitacion1+AreaHabitacion2+AreaHabitacion3+AreaBanos+AreaSocial+AreaPatio)*1.25
+print("El  area total de su casa es de: ", AreaTotal)
