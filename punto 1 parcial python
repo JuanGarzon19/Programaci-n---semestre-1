@@ -1,0 +1,61 @@
+print("Bienvenido a Aerolineas Scadta: ")
+distancia=int(input("Ingrese la distancia de su vuelo: "))
+estatus=int(input("Ingrese su estatus: (0 = no tiene), (1 = Bronce), (2 = Plata), (3 = Oro)"))
+if estatus == 0:
+    valortotal=(10000*distancia)*1.25
+    print("El valor final de su tiquete es de: ", valortotal)
+    
+elif estatus == 1:
+    valortotal=(9000*distancia)*1.25
+    puntosnuevos=(distancia*1)
+    puntos=int(input("Ingrese cuantos puntos tiene"))
+    print("El valor actual de su tiquete es de: ", valortotal)
+    pago=int(input("Desea pagar con puntos: (0 = No), (1 = Sí)"))
+    if pago == 0:
+        print(f"El valor final de su tiquete es de {valortotal} y tiene {puntos} puntos acumulados")
+    else: 
+        if valortotal >= (2000*puntos):
+            valortotal=valortotal-(2000*puntos)
+            print(f"El valor final de su tiquete es de {valortotal} y tiene 0 puntos acumulados")
+        else:
+            x=valortotal-(2000*puntos)
+            intpuntos=x//(-9000)
+            print(f"El valor final de su tiquete es de 0 y tiene {puntos} puntos acumulados")
+        
+    
+elif estatus == 2:
+    valortotal=(7500*distancia)*1.25
+    puntosnuevos=(distancia*2)
+    puntos=int(input("Ingrese cuantos puntos tiene"))
+    print("El valor actual de su tiquete es de: ", valortotal)
+    pago=int(input("Desea pagar con puntos: (0 = No), (1 = Sí)"))
+    if pago == 0:
+        print(f"El valor final de su tiquete es de {valortotal} y tiene {puntos} puntos acumulados")
+    else: 
+        if valortotal >= (2000*puntos):
+            valortotal=valortotal-(2000*puntos)
+            print(f"El valor final de su tiquete es de {valortotal} y tiene 0 puntos acumulados")
+        else:
+            x=valortotal-(2000*puntos)
+            puntos=x//(-7500)
+            print(f"El valor final de su tiquete es de 0 y tiene {puntos} puntos acumulados")
+    
+elif estatus == 3:
+    valortotal=(6000*distancia)*1.25
+    puntosnuevos=(distancia*4)
+    puntos=int(input("Ingrese cuantos puntos tiene"))
+    print("El valor actual de su tiquete es de: ", valortotal)
+    pago=int(input("Desea pagar con puntos: (0 = No), (1 = Sí)"))
+    if pago == 0:
+        print(f"El valor final de su tiquete es de {valortotal} y tiene {puntos} puntos acumulados")
+    else: 
+        if valortotal >= (2000*puntos):
+            valortotal=valortotal-(2000*puntos)
+            print(f"El valor final de su tiquete es de {valortotal} y tiene 0 puntos acumulados")
+        else:
+            x=valortotal-(2000*puntos)
+            puntos=x//(-6000)
+            print(f"El valor final de su tiquete es de 0 y tiene {puntos} puntos acumulados")
+else: 
+    print("Estatus incorrecto")
+    
