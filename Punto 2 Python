@@ -1,0 +1,11 @@
+x=int(input("Ingrese el valor de X"))
+y=int(input("Ingrese el valor de Y"))
+a=math.sqrt((y**x)+3)/8
+b=math.sqrt((x**y)*a)
+c=12*y-(x**(y+2))*2
+d=32*y-5
+e=(x*y)**2
+f=d/e
+g=(c/f)**3
+z=(b/g)**3
+print("El resultado es: ", z)
