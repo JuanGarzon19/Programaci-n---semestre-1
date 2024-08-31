@@ -1,0 +1,95 @@
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+int distancia, estatus, puntos, valortotal, puntosnuevos, pago, x;
+    
+cout<<"Bienvenido a Aerolineas Scadta: "<<endl;
+cout<<"Ingrese la distancia de su vuelo: "<<endl;
+cin>>distancia;
+cout<<"Ingrese su estatus: (0 = no tiene), (1 = Bronce), (2 = Plata), (3 = Oro)"<<endl;
+cin>>estatus;
+if (estatus == 0){
+    valortotal=(10000*distancia)*1.25;
+    cout<<"El valor final de su tiquete es de: "<<valortotal<<endl;
+    }
+else if (estatus == 1) {  
+    valortotal=(9000*distancia)*1.25;
+    puntosnuevos=(distancia*1);
+    cout<<"Ingrese cuantos puntos tiene"<<endl;
+    cin>>puntos;
+    cout<<"El valor actual de su tiquete es de: "<<valortotal<<endl;
+    cout<<"Desea pagar con puntos: (0 = No), (1 = Sí): "<<endl;
+    cin>>pago;
+    if (pago == 0) {
+        puntos=puntos+puntosnuevos;
+        cout<<"El valor final de su tiquete es de "<<valortotal<<" y tiene "<<puntos<<" puntos acumulados"<<endl;
+    }
+    else {
+        if (valortotal >= 2000*puntos) {
+            valortotal=valortotal-(2000*puntos);
+            cout<<"El valor final de su tiquete es de "<<valortotal<<" y tiene 0 puntos acumulados"<<endl;
+        }
+        else {
+            x=valortotal-(2000*puntos);
+            puntos=x/(-2000);
+            cout<<"El valor final de su tiquete es de 0 y tiene "<<puntos<<" puntos acumulados"<<endl;
+        }      
+      }
+    }  
+else if (estatus == 2) {
+    valortotal=(7500*distancia)*1.25;
+    puntosnuevos=(distancia*2);
+    cout<<"Ingrese cuantos puntos tiene: "<<endl;
+    cin>>puntos;
+    cout<<"El valor actual de su tiquete es de: "<<valortotal<<endl;
+    cout<<"Desea pagar con puntos: (0 = No), (1 = Sí): "<<endl;
+    cin>>pago;
+    if (pago == 0) {
+        puntos=puntos+puntosnuevos;
+        cout<<"El valor final de su tiquete es de "<<valortotal<<" y tiene "<<puntos<<" puntos acumulados"<<endl;
+    }
+    else {
+        if (valortotal >= 2000*puntos) {
+            valortotal=valortotal-(2000*puntos);
+            cout<<"El valor final de su tiquete es de "<<valortotal<<" y tiene 0 puntos acumulados"<<endl;
+        }
+        else {
+            x=valortotal-(2000*puntos);
+            puntos=x/(-2000);
+            cout<<"El valor final de su tiquete es de 0 y tiene "<<puntos<<" puntos acumulados"<<endl;
+        }      
+      }
+    }
+else if (estatus == 3) {
+    valortotal=(6000*distancia)*1.25;
+    puntosnuevos=(distancia*4);
+    cout<<"Ingrese cuantos puntos tiene: "<<endl;
+    cin>>puntos;
+    cout<<"El valor actual de su tiquete es de: "<<valortotal<<endl;
+    cout<<"Desea pagar con puntos: (0 = No), (1 = Sí): "<<endl;
+    cin>>pago;
+    if (pago == 0) {
+        puntos=puntos+puntosnuevos;
+        cout<<"El valor final de su tiquete es de "<<valortotal<<" y tiene "<<puntos<<" puntos acumulados"<<endl;
+    }
+    else {
+        if (valortotal >= 2000*puntos) {
+            valortotal=valortotal-(2000*puntos);
+            cout<<"El valor final de su tiquete es de "<<valortotal<<" y tiene 0 puntos acumulados"<<endl;
+        }
+        else {
+            x=valortotal-(2000*puntos);
+            puntos=x/(-2000);
+            cout<<"El valor final de su tiquete es de 0 y tiene "<<puntos<<" puntos acumulados"<<endl;
+        }      
+      }
+    }    
+else {
+    cout<<"Estatus incorrecto"<<endl;
+}    
+}
+    
