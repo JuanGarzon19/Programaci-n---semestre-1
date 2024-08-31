@@ -1,0 +1,22 @@
+#include<math.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+    float a, b, c, d, e, f, g, x, y, z;
+    cout<<"Ingrese el valor de X: ";
+    cin>>x;
+    cout<<"Ingrese el valor de Y: ";
+    cin>>y;
+    a=sqrt((pow(y, x))+3)/8;
+    b=sqrt(pow(x, y)*a);
+    c=12*y-pow(x, y+2)*2;
+    d=32*y-5;
+    e=pow(x*y, 2);
+    f=d/e;
+    g=pow(c/f, 3);
+    z=pow(b/g, 3);
+    cout<<"El resultado es: "<<z<<endl;
+    
+    return 0;
+}
